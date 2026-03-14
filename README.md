@@ -2,7 +2,7 @@
 
 A premium, interactive web application to analyze infrastructure, density, and underserved areas in any city. 
 
-![Dashboard Overview](/Users/rajveersingh/.gemini/antigravity/brain/21f2aad7-47e1-4e19-ab38-afc2add28d4d/analytics_view_1773421812303.png)
+![Dashboard Overview](/assets/demo.png)
 
 ## Problem Statement
 City planners and citizens need tools to understand how infrastructure is distributed. The **Urban Intelligence Dashboard** visualizes hospital density, school distribution, traffic nodes, and building density for a selected city (e.g., Pune).
@@ -59,4 +59,4 @@ The application uses a modern, high-performance tech stack:
 - **Analytics Dashboard:** View real-time infrastructure counts and a Density Distribution Index radar chart.
 - **Underserved Area Detection:** Use the sidebar to set a target amenity (e.g., Hospitals) and a distance threshold (e.g., 3km). The app calculates the Haversine distance for grid zones across the city and highlights areas in red that fail to meet the threshold.
 
-![Underserved Areas Map](/Users/rajveersingh/.gemini/antigravity/brain/21f2aad7-47e1-4e19-ab38-afc2add28d4d/underserved_areas_map_1773421792383.png)
+
