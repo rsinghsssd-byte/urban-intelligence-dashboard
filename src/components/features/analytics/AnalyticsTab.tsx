@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
-import { Download, RefreshCw, MoreHorizontal, Info } from 'lucide-react';
+import { MoreHorizontal, Info } from 'lucide-react';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   LineChart, Line, Legend,
@@ -21,28 +21,9 @@ export default function AnalyticsTab({ data, showToast }: DashboardTabProps) {
 
   return (
     <div className="h-full flex flex-col bg-[#f8f9fa] overflow-hidden">
-      {/* Header bar */}
-      <div className="px-12 pt-10 pb-6 flex items-center justify-between shrink-0">
-        <div>
-          <h1 className="text-2xl font-bold text-slate-900 font-display tracking-tight">Data Analytics</h1>
-          <p className="text-slate-400 text-sm mt-0.5">Advanced Infrastructure &amp; Service Gap Modeling</p>
-        </div>
-        <div className="flex gap-3">
-          <button
-            className="btn-outline rounded-full"
-            onClick={() => showToast && showToast('Exporting report as PDF...')}
-          >
-            <Download className="w-4 h-4" />
-            Export PDF
-          </button>
-          <button
-            className="btn-dark rounded-full"
-            onClick={() => showToast && showToast('Syncing real-time data...')}
-          >
-            <RefreshCw className="w-4 h-4" />
-            Real-time Sync
-          </button>
-        </div>
+      <div className="px-12 pt-10 pb-6 shrink-0">
+        <h1 className="text-2xl font-bold text-slate-900 font-display tracking-tight">Data Analytics</h1>
+        <p className="text-slate-400 text-sm mt-0.5">Advanced Infrastructure &amp; Service Gap Modeling</p>
       </div>
 
       {/* Scrollable content */}

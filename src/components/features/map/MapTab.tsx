@@ -55,7 +55,7 @@ export default function MapTab({ data, showToast }: DashboardTabProps) {
         <InfrastructureMap data={data} layers={layers} serviceRadius={serviceRadius} />
       </div>
       {/* Layers panel */}
-      <div className="absolute top-10 left-8 z-20">
+      <div className="absolute top-10 left-1/2 -translate-x-1/2 z-20">
         <div className="bg-white/90 backdrop-blur-md rounded-2xl px-4 py-3 shadow-lg border border-white/70">
           <div className="flex items-center justify-between mb-2.5">
             <p className="text-[10px] font-bold tracking-widest text-slate-500 uppercase">Active Layers</p>
@@ -103,7 +103,7 @@ export default function MapTab({ data, showToast }: DashboardTabProps) {
 
       {/* Bottom-left: Zone Focus */}
       <div className="absolute bottom-10 left-8 z-20 max-w-[240px]">
-        <div className="card p-4">
+        <div className="bg-white/70 backdrop-blur-md border border-white/50 shadow-xl rounded-2xl p-4">
           <div className="flex items-start justify-between mb-3">
             <div>
               <h3 className="font-bold text-slate-800 text-sm font-display">Zone Focus</h3>
@@ -131,7 +131,7 @@ export default function MapTab({ data, showToast }: DashboardTabProps) {
 
       {/* Bottom-right: Service Gaps */}
       <div className="absolute bottom-6 right-4 z-20 max-w-[260px]">
-        <div className="card p-4">
+        <div className="bg-white/70 backdrop-blur-md border border-white/50 shadow-xl rounded-2xl p-4">
           <h3 className="font-bold text-slate-800 text-sm font-display mb-1">Service Gaps</h3>
           <p className="text-xs text-slate-400 mb-3">Identify underserved wards requiring urgent resource allocation.</p>
           <div className="flex items-center gap-4">

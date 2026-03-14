@@ -1,6 +1,6 @@
 'use client';
 
-import { FileText, Waves, Bus, TreePine } from 'lucide-react';
+
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
 } from 'recharts';
@@ -18,21 +18,12 @@ export default function StrategyTab({ data, showToast }: DashboardTabProps) {
         <div className="card p-10 bg-gradient-to-br from-slate-50 via-blue-50/30 to-white overflow-hidden relative">
           <div className="absolute -top-8 -right-8 w-48 h-48 rounded-full bg-teal-50/60 pointer-events-none" />
           <div className="absolute -bottom-8 -left-8 w-36 h-36 rounded-full bg-blue-50/40 pointer-events-none" />
-          <div className="relative z-10 flex items-start justify-between gap-6">
-            <div className="flex-1">
-              <h1 className="text-3xl font-bold text-slate-900 font-display mb-3 tracking-tight">Strategy Overview</h1>
-              <p className="text-slate-500 text-sm leading-relaxed max-w-lg">
-                AI-driven recommendations for city-wide public service improvements based on current
-                population density and infrastructure gaps.
-              </p>
-            </div>
-            <button
-              className="btn-dark shrink-0 mt-1 rounded-full"
-              onClick={() => showToast && showToast('Generating detailed strategy report...')}
-            >
-              <FileText className="w-4 h-4" />
-              Generate Detailed Report
-            </button>
+          <div className="relative z-10">
+            <h1 className="text-3xl font-bold text-slate-900 font-display mb-3 tracking-tight">Strategy Overview</h1>
+            <p className="text-slate-500 text-sm leading-relaxed max-w-lg">
+              AI-driven recommendations for city-wide public service improvements based on current
+              population density and infrastructure gaps.
+            </p>
           </div>
         </div>
 
