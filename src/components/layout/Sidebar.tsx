@@ -47,10 +47,6 @@ export default function Sidebar({ activeTab, onTabChange }: SidebarProps) {
         })}
       </nav>
 
-      {/* User avatar at bottom */}
-      <div className="mt-4 w-10 h-10 rounded-full bg-slate-700 text-slate-300 flex items-center justify-center text-sm font-semibold tracking-wider cursor-pointer hover:bg-slate-600 transition-colors shadow-md border border-slate-600">
-        JD
-      </div>
     </aside>
   );
 }
