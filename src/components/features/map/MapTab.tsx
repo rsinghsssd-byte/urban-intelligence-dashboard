@@ -86,6 +86,27 @@ export default function MapTab({ data, showToast }: DashboardTabProps) {
           </div>
         </div>
       </div>
+      {/* Top-right: Map Legend */}
+      <div className="absolute top-10 right-8 z-20">
+        <div className="bg-white/90 backdrop-blur-md rounded-2xl px-4 py-3 shadow-lg border border-white/70 min-w-[160px]">
+          <p className="text-[10px] font-bold tracking-widest text-slate-500 uppercase mb-2.5">Map Legend</p>
+          <div className="space-y-2">
+            {[
+              { label: 'Hospitals', color: 'bg-red-500' },
+              { label: 'Schools', color: 'bg-blue-500' },
+              { label: 'Traffic Nodes', color: 'bg-amber-500' },
+              { label: 'Pharmacies', color: 'bg-emerald-500' },
+              { label: 'Police Stations', color: 'bg-violet-500' },
+              { label: 'Underserved Area', color: 'bg-red-500/40 border border-red-500' },
+            ].map(item => (
+              <div key={item.label} className="flex items-center gap-2.5">
+                <div className={`w-3 h-3 rounded-full shrink-0 ${item.color}`} />
+                <span className="text-xs font-semibold text-slate-700">{item.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* Floating Stats - center bottom */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex gap-4 pointer-events-none">
